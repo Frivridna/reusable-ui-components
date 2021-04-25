@@ -34,11 +34,19 @@ export const App = () => {
         thumbnailUrl="https://www.fillmurray.com/100/100"
         title="This is the title" 
         secondaryText="Secondary title"
-      />
+      >
+        Child content here! 
+      </ThinnerCard>
+
       <Card 
         title="Only a title"
         secondaryText="And a secondary text"
       />
+
+      <Card>
+        <h1>Hello from Children!</h1>
+      </Card>
+      
       <FloatingActionButton />
     </>
     // </Provider>

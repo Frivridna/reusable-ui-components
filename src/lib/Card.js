@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Children } from 'react'
 import styled from 'styled-components/macro'
 
 const Container = styled.div`
@@ -40,8 +40,14 @@ const CoverImage = styled.img`
 const Content = styled.div`
   padding: 20px;
 `;
+
+const ChildrenContent = styled.div`
+  background: #f1f1f1;
+  padding: 10px;
+`;
+
 // allow container styles to be modified from another component that uses this card ---> send in className as prop. 
-export const Card = ({ title, secondaryText, thumbnailUrl, coverImage, className }) => {
+export const Card = ({ title, secondaryText, thumbnailUrl, coverImage, className, children }) => {
   return (
     <Container className={className}> 
       {coverImage && <CoverImage src={coverImage}/>}
@@ -53,6 +59,7 @@ export const Card = ({ title, secondaryText, thumbnailUrl, coverImage, className
           {secondaryText && <SecondaryText>{secondaryText}</SecondaryText>}
           </div>
         </Titlebar>
+        {children && <ChildrenContent>{children}</ChildrenContent>}
       </Content>
     </Container>
   )
