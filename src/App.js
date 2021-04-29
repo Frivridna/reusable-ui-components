@@ -47,7 +47,11 @@ export const App = () => {
         <h1>Hello from Children!</h1>
       </Card>
       
-      <FloatingActionButton />
+      {/* <FloatingActionButton /> */}
+      <FloatingActionButton 
+  //        icon="https://img.icons8.com/ios/50/000000/microphone.png"
+            icon="assets/microphone.png"
+      />
     </>
     // </Provider>
   )
