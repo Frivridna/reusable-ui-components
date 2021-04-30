@@ -14,7 +14,7 @@ export const todos = createSlice({
   }
 })
 
-//getState can also be in the return as an argument.. typ ---> used to get the current state of our store
+//getState can also be in the return as an argument. ---> use to get the current state of our store
 export const fetchTodos = () => {
   return (dispatch) => {
     dispatch(ui.actions.setLoading(true))
