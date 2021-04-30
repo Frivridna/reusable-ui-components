@@ -1,7 +1,7 @@
 import React from 'react' 
 import { useDispatch } from 'react-redux'
 
-import {fetchTodos } from '../reducers/todos'
+import { fetchTodos } from '../reducers/todos'
 
 export const FetchTodosButton = () => {
   const dispatch = useDispatch()
