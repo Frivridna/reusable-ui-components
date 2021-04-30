@@ -4,9 +4,12 @@ import styled from 'styled-components'
 const FloatingActionButton = ({ icon }) => {
 
 /*   const onFormSubmit = (event) => {
-		event.preventDefault()
-    //here you would dispatch some actions, reset input fields etc. 
-  } */
+		    event.preventDefault()
+
+        // dispatch some actions, 
+        // reset input field etc.
+
+   } */
 
   return (
     // <Form onSubmit={onFormSubmit}>
