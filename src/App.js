@@ -7,7 +7,7 @@ import { ui } from './reducers/ui'
 import { todos } from './reducers/todos'
 import { Card } from './lib/Card'
 
-import FloatingActionButton from './components/FloatingActionButton'
+import FloatingActionButton from './lib/FloatingActionButton'
 
 import { TodosList } from './components/TodosList'
 import {LoadingIndicator} from './components/LoadingIndicator'
